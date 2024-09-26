@@ -32,7 +32,7 @@ class CarWashStation:
             return self.calculate_washing_price(car)
         return 0
 
-    def serve_cars(self, cars: Car) -> float:
+    def serve_cars(self, cars: list[Car]) -> float:
         income = 0
         for car in cars:
             income += self.calculate_washing_price(car)
